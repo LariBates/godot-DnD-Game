@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=3 uid="uid://syh7vlu3nl08"]
+[gd_scene load_steps=49 format=3 uid="uid://syh7vlu3nl08"]
 
 [ext_resource type="Script" path="res://Player.gd" id="1_6bwu7"]
 [ext_resource type="PackedScene" uid="uid://dg3nfo2mwhjhm" path="res://table long.gltf" id="2_4tv4e"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bco5mc7ijat7x" path="res://New_Chair_DnD.dae" id="2_yrwis"]
 [ext_resource type="PackedScene" uid="uid://bf11yrqtmvrln" path="res://booth chair.gltf" id="3_ojr6f"]
 [ext_resource type="PackedScene" uid="uid://daqfmeafclypl" path="res://table short.gltf" id="4_bi6hj"]
+[ext_resource type="PackedScene" uid="uid://1t7eh55u5vvk" path="res://potted plant.gltf" id="8_h6kms"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_xai2k"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -1418,7 +1419,6 @@ skeleton = NodePath("../..")
 [node name="StaticBody3D" type="StaticBody3D" parent="walls/MeshInstance3D17"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="walls/MeshInstance3D17/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_o8lei")
 
 [node name="MeshInstance3D31" type="MeshInstance3D" parent="walls"]
@@ -1429,7 +1429,6 @@ skeleton = NodePath("../..")
 [node name="StaticBody3D" type="StaticBody3D" parent="walls/MeshInstance3D31"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="walls/MeshInstance3D31/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_o8lei")
 
 [node name="MeshInstance3D33" type="MeshInstance3D" parent="walls"]
@@ -1440,7 +1439,6 @@ skeleton = NodePath("../..")
 [node name="StaticBody3D" type="StaticBody3D" parent="walls/MeshInstance3D33"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="walls/MeshInstance3D33/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_o8lei")
 
 [node name="MeshInstance3D34" type="MeshInstance3D" parent="walls"]
@@ -1451,7 +1449,6 @@ skeleton = NodePath("../..")
 [node name="StaticBody3D" type="StaticBody3D" parent="walls/MeshInstance3D34"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="walls/MeshInstance3D34/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_o8lei")
 
 [node name="MeshInstance3D30" type="MeshInstance3D" parent="walls"]
@@ -1462,7 +1459,6 @@ skeleton = NodePath("../..")
 [node name="StaticBody3D" type="StaticBody3D" parent="walls/MeshInstance3D30"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="walls/MeshInstance3D30/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_o8lei")
 
 [node name="MeshInstance3D29" type="MeshInstance3D" parent="walls"]
@@ -1473,7 +1469,6 @@ skeleton = NodePath("../..")
 [node name="StaticBody3D" type="StaticBody3D" parent="walls/MeshInstance3D29"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="walls/MeshInstance3D29/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_o8lei")
 
 [node name="MeshInstance3D32" type="MeshInstance3D" parent="walls"]
@@ -1484,7 +1479,6 @@ skeleton = NodePath("../..")
 [node name="StaticBody3D" type="StaticBody3D" parent="walls/MeshInstance3D32"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="walls/MeshInstance3D32/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_o8lei")
 
 [node name="MeshInstance3D10" type="MeshInstance3D" parent="walls"]
@@ -1951,3 +1945,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.3988, 0, 15.39)
 
 [node name="table_short13" parent="tables_short" instance=ExtResource("4_bi6hj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.64351, 0, 24.3734)
+
+[node name="potting_plant" parent="." instance=ExtResource("8_h6kms")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.90766, 0, -3.78496)
